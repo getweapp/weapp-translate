@@ -1,0 +1,33 @@
+<view class='textarea_view has-success well row'>
+	 <image mode="aspectFit" src="{{fanyi_src}}" class="col-1 icon-size-64" />
+	 <input bindinput="textarea_bindinput" class="form-control col-5" bindblur="bindTextAreaBlur" placeholder="{{textarea_placeholder}}" value="{{textarea_text}}" bindfocus="bindTextAreaFocus"/>
+</view>
+<view class='well bg-warning row'>
+	<button size="mini" type="primary" bindtap="btn_click" class="col-9 bg-primary">
+		 <text class='text-primary'>{{btn_text}}</text>
+	</button>
+	<button size="mini" type="deault" class="btn col-1" bindtap="btn_click_null">
+		{{btn_text_null}}
+	</button>
+</view>
+<!-- <view class='panel panel-primary click'>
+	<view class='text-center bg-success panel-heading panel-primary'>
+		 <text class='result_text'>{{result}}</text>
+	</view>
+	<view class='text-center panel-body panel-primary'>
+		 <text class='result_text'>{{result_text}}</text>
+	</view>
+</view> -->
+
+<view class='panel panel-success'>
+	<view wx:for="{{fanyi_lishi}}" class="lishi_list" wx:key="unique">
+	   <view class='panel panel-warning click'>
+			<view class='text-center bg-success panel-heading panel-primary'>
+				 <text class='result_text'>{{item.src}}</text>
+			</view>
+			<view class='text-center panel-body panel-primary'>
+				 <text class='result_text'>{{item.dst}}</text>
+			</view>
+		</view>
+	</view>
+</view>

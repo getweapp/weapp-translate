@@ -1,0 +1,34 @@
+{
+    "pages": [
+        "views/index/index",
+        "views/lishi/lishi"
+    ],
+    "window":{
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "black",
+        "navigationBarTitleText": "翻译",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh":false
+    },
+    "tabBar":{
+        "list":[
+            {
+                "pagePath":"views/index/index",
+                "text": "翻译",
+                "iconPath":"images/fanyi.png",
+                "selectedIconPath":"images/fanyi_selected.png"
+            },
+            {
+                "pagePath":"views/lishi/lishi",
+                "text": "历史(过时)",
+                "iconPath":"images/lishi.png",
+                "selectedIconPath":"images/lishi_selected.png"
+            }
+        ],
+        "color":"#616FB6",
+        "selectedColor":"#1D19E7",
+        "backgroundColor":"black",
+        "borderStyle":"black"
+    },
+    "debug":false
+}

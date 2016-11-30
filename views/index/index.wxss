@@ -1,0 +1,4 @@
+.form-control{
+	height: 55px;
+	font-size: 40rpx;
+}
